@@ -1,0 +1,111 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 20px;
+}
+
+header {
+  background: hsla(238, 100%, 71%, 1);
+
+  background: linear-gradient(
+    90deg,
+    hsla(238, 100%, 71%, 1) 0%,
+    hsla(295, 100%, 84%, 1) 100%
+  );
+
+  background: -moz-linear-gradient(
+    90deg,
+    hsla(238, 100%, 71%, 1) 0%,
+    hsla(295, 100%, 84%, 1) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    90deg,
+    hsla(238, 100%, 71%, 1) 0%,
+    hsla(295, 100%, 84%, 1) 100%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#696EFF", endColorstr="#F8ACFF", GradientType=1 );
+}
+header h1 {
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 15px 0;
+}
+
+ul {
+  padding: 0;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+main {
+  display: flex;
+  gap: 20px;
+}
+main aside {
+  flex: 0 0 30%;
+}
+main section {
+  flex: 0 0 60%;
+}
+
+#current {
+  border: 1px solid #111;
+  margin-top: 20px;
+  padding: 10px;
+}
+/* Form */
+#city-input,
+input[type="submit"] {
+  width: 100%;
+  padding: 7px;
+}
+input[type="submit"] {
+  background-color: navy;
+  border: 0;
+  outline: 0;
+  color: white;
+  margin-top: 10px;
+}
+
+ul#history {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#history li {
+  background-color: gray;
+  padding: 10px 0;
+  border-radius: 5px;
+}
+
+/* boxes */
+.boxes {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.boxes div {
+  flex: 1;
+
+  background-color: rgb(21, 21, 61);
+  color: white;
+  padding-left: 5px;
+}
+
+#current-search-term {
+  display: flex;
+  align-items: center;
+}
