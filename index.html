@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <h1>Weather Dashbaord</h1>
+  </header>
+  <main>
+    <aside>
+      <h2>Search for a city:</h2>
+      <form action="" id="search-form">
+        <input type="text" id="city-input" placeholder="San Diego" />
+        <input type="submit" name="" id="search-btn" value="Search" />
+      </form>
+      <hr />
+      <div id="history-container">
+        <ul id="history">
+        </ul>
+      </div>
+      <!-- <button id="clear-history-btn">Clear History</button> -->
+    </aside>
+    <section class="display">
+      <div id="current">
+        <h3 id="current-search-term"></h3>
+        <ul>
+          <li>Temp: <span id="current-temp"></span></li>
+          <li>Wind: <span id="current-wind"></span></li>
+          <li>Humidity: <span id="current-humidity"></span></li>
+        </ul>
+      </div>
+      <div class="forecast">
+        <h3>5-Day Forecast:</h3>
+        <div class="boxes" id="forecast-container">
+          <!-- Forecast data will be added here dynamically -->
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <script src="./app.js"></script>
+</body>
+
+</html>
